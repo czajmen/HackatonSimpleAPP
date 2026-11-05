@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="Serilog" />
+    <PackageReference Include="Polly" />
+    <PackageReference Include="Dapper" />
+    <PackageReference Include="FluentValidation" />
+    <PackageReference Include="Humanizer.Core" />
+    <PackageReference Include="YamlDotNet" />
+    <PackageReference Include="CsvHelper" />
+    <PackageReference Include="Scriban" />
+    <PackageReference Include="MimeKit" />
+  </ItemGroup>
+
+</Project>

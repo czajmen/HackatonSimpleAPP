@@ -1,0 +1,29 @@
+{
+  "servers": {
+    "docs-search": {
+      "type": "http",
+      "url": "http://localhost:5098/demo/mcp/honest"
+    },
+    "invoice-tools": {
+      "type": "http",
+      "url": "http://localhost:5098/demo/mcp/poisoned"
+    },
+    "weather": {
+      "type": "http",
+      "url": "http://localhost:5098/demo/mcp/rugpull"
+    },
+    "filesystem": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "./data"]
+    },
+    "crm-db": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@fabrikam/crm-mcp@1.4.2"],
+      "env": {
+        "CRM_API_KEY": "REPLACE_ME_demo_placeholder"
+      }
+    }
+  }
+}

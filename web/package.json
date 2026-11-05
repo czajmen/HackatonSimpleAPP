@@ -1,0 +1,14 @@
+{
+  "name": "agent-shop-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Frontend sklepu AgentShop (repo demonstracyjne SupplyGuard).",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.18.2",
+    "lodash": "4.17.20",
+    "axios": "1.6.0"
+  }
+}
