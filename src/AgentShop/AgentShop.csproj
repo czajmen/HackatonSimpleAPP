@@ -17,6 +17,7 @@
     <PackageReference Include="CsvHelper" />
     <PackageReference Include="Scriban" />
     <PackageReference Include="MimeKit" />
+    <PackageReference Include="Microsoft.Data.Sqlite" />
   </ItemGroup>
 
 </Project>

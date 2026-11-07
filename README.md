@@ -24,3 +24,11 @@ dotnet build
 ```
 
 Wersje paczek są celowo starsze niż najnowsze — to materiał do analizy, nie wzorzec do naśladowania.
+
+## Testy
+
+```
+dotnet test                                   # xunit, tests/AgentShop.Tests
+(cd web && npm ci && npm test)                # node:test
+(cd scripts && python3 -m venv .venv && .venv/bin/pip install -r requirements.txt && .venv/bin/pytest)
+```
