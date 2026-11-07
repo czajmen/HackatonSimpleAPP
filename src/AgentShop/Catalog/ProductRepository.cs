@@ -26,7 +26,8 @@ public class ProductRepository(SqliteConnection connection)
     public List<Product> SearchByName(string name)
     {
         using var command = connection.CreateCommand();
-        command.CommandText = "SELECT id, name, price FROM products WHERE name = '" + name + "'";
+        command.CommandText = "SELECT id, name, price FROM products WHERE name = $name";
+        command.Parameters.AddWithValue("$name", name);
 
         var products = new List<Product>();
         using var reader = command.ExecuteReader();
