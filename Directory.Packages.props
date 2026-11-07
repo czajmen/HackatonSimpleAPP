@@ -3,7 +3,7 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.4" />
     <PackageVersion Include="Serilog" Version="3.1.1" />
     <PackageVersion Include="Polly" Version="7.2.4" />
     <PackageVersion Include="Dapper" Version="2.1.28" />
@@ -12,8 +12,8 @@
     <!-- BACKTEST: paczka przypadku historycznego, dobór w K17 -->
     <PackageVersion Include="YamlDotNet" Version="15.1.2" />
     <PackageVersion Include="CsvHelper" Version="30.0.1" />
-    <PackageVersion Include="Scriban" Version="5.9.1" />
-    <PackageVersion Include="MimeKit" Version="4.3.0" />
+    <PackageVersion Include="Scriban" Version="7.5.3" />
+    <PackageVersion Include="MimeKit" Version="4.18.2" />
     <PackageVersion Include="Microsoft.Data.Sqlite" Version="9.0.0" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
     <PackageVersion Include="xunit" Version="2.9.2" />
