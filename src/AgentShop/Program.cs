@@ -2,7 +2,6 @@
 
 using AgentShop.Catalog;
 using AgentShop.Files;
-using AgentShop.Payments;
 using Microsoft.Data.Sqlite;
 using Newtonsoft.Json;
 
@@ -15,7 +14,6 @@ var products = new ProductRepository(connection);
 products.Seed(new Product(1, "Mouse", 19.90m), new Product(2, "Keyboard", 49.00m));
 
 var invoices = new InvoiceFiles(Path.Combine(app.Environment.ContentRootPath, "invoices"));
-var payments = new PaymentClient();
 
 app.MapGet("/", () => "AgentShop demo");
 app.MapGet("/health", () => Results.Ok(new { status = "ok" }));
@@ -25,7 +23,5 @@ app.MapGet("/products", (string name) =>
 
 app.MapGet("/invoices/{fileName}", (string fileName) =>
     invoices.Read(fileName) is { } content ? Results.File(content, "application/octet-stream") : Results.NotFound());
-
-app.MapGet("/payments/header", () => payments.AuthorizationHeader);
 
 app.Run();
